@@ -5,6 +5,7 @@ const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
+  styles = "",
 }) => {
   const sizeClasses = {
     small: "px-3 py-1 text-sm",
@@ -14,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`bg-blue-500 text-white ${sizeClasses[size]} ${shape} hover:bg-blue-600 transition`}
+      className={`bg-blue-500 text-white ${sizeClasses[size]} ${shape} ${styles} hover:bg-blue-600 transition`}
     >
       {title}
     </button>
