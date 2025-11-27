@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
+
 
 const Landing: React.FC = () => {
   return (
@@ -15,6 +17,18 @@ const Landing: React.FC = () => {
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Card />
         <Card />
+      </div>
+
+      <div className="mt-10 space-y-4">
+        <h2 className="text-lg font-semibold">Button Variants</h2>
+
+        <div className="flex gap-4 flex-wrap">
+   
+          <Button title="Medium - Rounded SM" size="medium" shape="rounded-sm" />
+          <Button title="Medium - Rounded MD" size="medium" shape="rounded-md" />
+          <Button title="Medium - Rounded Full" size="medium" shape="rounded-full" />
+
+        </div>
       </div>
     </div>
   );
