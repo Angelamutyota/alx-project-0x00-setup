@@ -1,2 +1,0 @@
-# Project Description
-The application mimics core features of Airbnb’s UI, including property listings with images, ratings, and interactive components, while emphasizing best practices in front-end development. 
