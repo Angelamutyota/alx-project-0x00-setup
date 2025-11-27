@@ -23,20 +23,14 @@ const Landing: React.FC = () => {
         <h2 className="text-lg font-semibold">Button Variants</h2>
 
         <div className="flex gap-4 flex-wrap">
-          {/* SMALL */}
-          <Button title="Small - Rounded SM" size="small" shape="rounded-sm" styles="" />
-          <Button title="Small - Rounded MD" size="small" shape="rounded-md" styles=""/>
-          <Button title="Small - Rounded Full" size="small" shape="rounded-full" styles="" />
+      
 
-          {/* MEDIUM */}
           <Button title="Medium - Rounded SM" size="medium" shape="rounded-sm" styles="" />
           <Button title="Medium - Rounded MD" size="medium" shape="rounded-md" styles="" />
+         <Button title="Medium - Rounded Full" size="medium" shape="rounded-lg" styles="" />
           <Button title="Medium - Rounded Full" size="medium" shape="rounded-full" styles="" />
 
-          {/* LARGE */}
-          <Button title="Large - Rounded SM" size="large" shape="rounded-sm" styles="" />
-          <Button title="Large - Rounded MD" size="large" shape="rounded-md" styles="" />
-          <Button title="Large - Rounded Full" size="large" shape="rounded-full" styles="" />
+         
         </div>
       </div>
     </div>
