@@ -1,40 +1,15 @@
-import type { NextPage } from 'next'
-import PropertyCard from '../components/PropertyCard'
-import type { Property } from '../interfaces/property'
+import React from "react";
 
-const sampleData: Property[] = [
-  {
-    id: '1',
-    title: 'Sunny Studio by the Sea',
-    location: 'Mombasa, Kenya',
-    pricePerNight: 4500,
-    rating: 4.6,
-    reviewsCount: 84,
-    imageSrc: '/images/studio1.jpg',
-  },
-  {
-    id: '2',
-    title: 'Cozy Treehouse Escape',
-    location: 'Diani, Kenya',
-    pricePerNight: 7500,
-    rating: 4.9,
-    reviewsCount: 120,
-    imageSrc: '/images/treehouse.jpg',
-  },
-]
-
-const Home: NextPage = () => {
+const Home: React.FC = () => {
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Properties</h1>
-
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {sampleData.map((p) => (
-          <PropertyCard key={p.id} property={p} />
-        ))}
-      </div>
+    <main className="flex flex-col h-screen justify-center items-center text-4xl font-semibold">
+      <h1>Airbnb Application Clone system</h1>
+      <button className=" border px-3 py-1 text-lg mt-3 bg-blue-500 text-white rounded-full">
+        Get Started
+      </button>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+
